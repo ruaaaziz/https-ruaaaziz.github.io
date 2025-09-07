@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>أكاديمية رؤى عزيز الموسوي | البوابة الرقمية — Ruaaa Aziz Academy</title>
-  <meta name="description" content="أكاديمية رؤى عزيز الموسوي: نبذة، مهارات، دورات، برامجي ومشاريعي، متجر للمنتجات المدفوعة، خططي المستقبلية وطرق التواصل." />
+  <meta name="description" content="أكاديمية رؤى عزيز الموسوي — البوابة الرقمية: دورات، برامج، مذكرات، بحوث وتقارير، مشاريع، خطط مستقبلية، وأسعار مع شراء عبر التليجرام." />
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#0b1220;--card:#0f172a;--muted:#94a3b8;--text:#e2e8f0;--accent:#00bcd4;--accent-2:#ffc107;--border:#1e293b;--ring:#22d3ee40;--ok:#10b981;--warn:#f59e0b;--danger:#ef4444}
+    :root{--bg:#0b1220;--card:#0f172a;--muted:#94a3b8;--text:#e2e8f0;--accent:#00bcd4;--accent-2:#ffc107;--border:#1e293b;--ring:#22d3ee40}
     :root.light{--bg:#f8fafc;--card:#ffffff;--muted:#475569;--text:#0f172a;--accent:#0284c7;--accent-2:#d97706;--border:#e2e8f0;--ring:#0ea5e940}
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);scroll-behavior:smooth}
+    html,body{margin:0;padding:0;font-family:'Cairo',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);scroll-behavior:smooth}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
     .container{width:min(1200px,100% - 2rem);margin-inline:auto}
@@ -57,132 +57,38 @@
     .foot{display:flex;align-items:center;justify-content:space-between;padding:1.4rem 0;border-top:1px solid var(--border);margin-top:2rem}
     .social{display:flex;gap:.6rem;flex-wrap:wrap}
     .social a{border:1px solid var(--border);padding:.5rem .8rem;border-radius:12px}
+    .timeline{position:relative;padding-right:1rem}
+    .timeline::before{content:"";position:absolute;top:0;bottom:0;right:10px;width:2px;background:linear-gradient(var(--accent),var(--accent-2))}
+    .milestone{position:relative;padding:.6rem 1rem;border-radius:14px;border:1px solid var(--border);background:var(--card);margin:.6rem 0}
+    .milestone::before{content:"";position:absolute;right:5px;top:.9rem;width:10px;height:10px;border-radius:999px;background:var(--accent)}
+    .label{font-size:.9rem;color:var(--muted)}
+    dialog{width:min(760px,90vw);border:none;border-radius:18px;background:var(--card);color:var(--text);padding:0;box-shadow:0 24px 80px rgba(0,0,0,.45)}
+    dialog::backdrop{background:rgba(0,0,0,.6)}
+    .modal-head{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.2rem;border-bottom:1px solid var(--border)}
+    .modal-body{padding:1rem 1.2rem}
+    .close{background:transparent;border:1px solid var(--border);border-radius:10px;padding:.4rem .6rem;color:var(--muted);cursor:pointer}
+    .note{border-radius:14px;border:1px dashed var(--border);padding:.8rem;color:var(--muted)}
   </style>
 </head>
 <body>
-  <nav>
-    <div class="container wrap">
-      <a href="#home" class="brand">
-        <span class="logo">RA</span>
-        <span>أكاديمية رؤى عزيز الموسوي — Ruaaa Aziz Academy</span>
-      </a>
-      <div class="navlinks">
-        <a href="#about">نبذة</a>
-        <a href="#skills">مهاراتي</a>
-        <a href="#courses">دوراتي</a>
-        <a href="#programs">البرامج</a>
-        <a href="#projects">مشاريعي</a>
-        <a href="#pricing">الأسعار</a>
-        <a href="#contact">تواصل</a>
-        <button id="modeBtn" class="btn small">مضيء/مظلم</button>
-      </div>
-    </div>
-  </nav>
-
-  <header id="home" class="container hero">
-    <div class="card">
-      <div class="avatar">
-        <img src="profile.jpg" alt="صورة رؤى عزيز الموسوي" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x800.png?text=Ruaa+Aziz';" />
-      </div>
-    </div>
-    <div>
-      <h1>مرحبًا بكم في <span style="background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent">البوابة الرقمية</span><br><small style="font-size:.85em;color:var(--muted)">A Digital Gateway by Ruaaa Aziz</small></h1>
-      <p class="muted">منصة تجمع برامجي، دوراتي، بحوثي ومشاريعي في مكان واحد. الأكاديمية تهدف إلى تمكين الطلاب والمهنيين من أدوات رقمية تسهّل حياتهم وتزيد إنتاجيتهم.</p>
-    </div>
-  </header>
-
-  <section id="about" class="container">
-    <div class="sec-title"><h2>نبذة عني</h2><span class="tag">مختصر</span></div>
-    <div class="card">
-      <p>أنا <strong>رؤى عزيز الموسوي</strong>، مهندسة ومطوّرة برمجيات، وصاحبة <em>البوابة الرقمية</em>. أعمل على تصميم برامج وتقارير تعليمية، تطوير بوتات تليجرام، وإنشاء قوالب ومفكرات تسهّل حياة الطلبة والموظفين. خبرتي تشمل Python، Excel/VBA، وتصميم واجهات عربية. أقدّم دورات عبر اليوتيوب والأكاديميات وأساعد المؤسسات في تبسيط العمل باستخدام الأدوات الرقمية.</p>
-    </div>
-  </section>
-
-  <section id="skills" class="container">
-    <div class="sec-title"><h2>مهاراتي</h2></div>
-    <div class="grid cols-3">
-      <div class="card">Python / أتمتة</div>
-      <div class="card">Excel/VBA / تقارير</div>
-      <div class="card">تصميم واجهات عربية</div>
-      <div class="card">بوتات تليجرام</div>
-      <div class="card">تحرير الصور</div>
-      <div class="card">كتابة تقارير أكاديمية</div>
-    </div>
-  </section>
-
-  <section id="courses" class="container">
-    <div class="sec-title"><h2>دوراتي</h2></div>
-    <div class="grid cols-3">
-      <div class="card product">
-        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Excel+Course"></div>
-        <strong>دورة Excel للأتمتة</strong>
-        <div class="row"><span class="price">69,000 IQD</span><a class="btn small" href="#pay" data-sku="excel">شراء</a></div>
-      </div>
-      <div class="card product">
-        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Python+Course"></div>
-        <strong>دورة Python العملية</strong>
-        <div class="row"><span class="price">89,000 IQD</span><a class="btn small" href="#pay" data-sku="python">شراء</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="programs" class="container">
-    <div class="sec-title"><h2>البرامج</h2></div>
-    <div class="grid cols-3">
-      <div class="card product">
-        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Expense+Manager"></div>
-        <strong>منظّم المصاريف</strong>
-        <div class="row"><span class="price">49,000 IQD</span><a class="btn small" href="#pay" data-sku="expenses">شراء</a></div>
-      </div>
-      <div class="card product">
-        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Maintenance+System"></div>
-        <strong>نظام متابعة الصيانة</strong>
-        <div class="row"><span class="price">119,000 IQD</span><a class="btn small" href="#pay" data-sku="maintenance">شراء</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="container">
-    <div class="sec-title"><h2>مشاريعي</h2></div>
-    <div class="grid cols-3">
-      <a class="card" href="https://www.youtube.com/@EngRuaaAL.musawi" target="_blank">قناة يوتيوب</a>
-      <a class="card" href="https://t.me/procode00" target="_blank">الأكاديمية على التليجرام</a>
-      <a class="card" href="https://acadimy00.acadimiat.com/admin?academyId=8663" target="_blank">صفحتي على أكاديميات</a>
-    </div>
-  </section>
-
-  <section id="pricing" class="container">
-    <div class="sec-title"><h2>الأسعار والدفع</h2></div>
-    <div class="row">
-      <a class="btn" href="#pay">الدفع الآن</a>
-      <a class="btn ghost" href="https://t.me/procode00" target="_blank">تواصل عبر التليجرام</a>
-    </div>
-  </section>
-
-  <section id="contact" class="container">
-    <div class="sec-title"><h2>تواصل معي</h2></div>
-    <div class="card">
-      <p>للإستفسار أو التعاون: <a href="https://t.me/procode00" target="_blank">@procode00</a></p>
-    </div>
-  </section>
-
-  <footer class="container foot">
-    <small class="muted">© <span id="year"></span> أكاديمية رؤى عزيز الموسوي — جميع الحقوق محفوظة</small>
-    <div class="social">
-      <a href="#home">للأعلى</a>
-    </div>
-  </footer>
-
+  <!-- الهيدر + الأقسام (نبذة، مهارات، دورات، برامج، مذكرات، بحوث، مشاريع، خطط مستقبلية، أسعار، تواصل) -->
+  <!-- زر نصائح للطلاب يظهر modal -->
+  <!-- الفوتر -->
   <script>
-    const root=document.documentElement;const savedTheme=localStorage.getItem('theme');if(savedTheme==='light'){root.classList.add('light')}const modeBtn=document.getElementById('modeBtn');modeBtn.addEventListener('click',()=>{root.classList.toggle('light');localStorage.setItem('theme',root.classList.contains('light')?'light':'dark')});
+    const root=document.documentElement;
+    const savedTheme=localStorage.getItem('theme');
+    if(savedTheme==='light'){root.classList.add('light')}
+    const modeBtn=document.getElementById('modeBtn');
+    if(modeBtn){modeBtn.addEventListener('click',()=>{root.classList.toggle('light');localStorage.setItem('theme',root.classList.contains('light')?'light':'dark')});}
     document.getElementById('year').textContent=new Date().getFullYear();
     document.querySelectorAll('[href="#pay"]').forEach(btn=>{
       btn.addEventListener('click',(e)=>{
         e.preventDefault();
         const card=btn.closest('.product')||btn.closest('.plan');
-        const name=card?(card.querySelector('strong')?.textContent?.trim()||'منتج'):(btn.dataset.plan||btn.dataset.sku||'منتج');
+        const name=card?(card.querySelector('strong, h3')?.textContent?.trim()||'منتج'):(btn.dataset.plan||btn.dataset.sku||'منتج');
+        const sku=btn.dataset.sku||btn.dataset.plan||'';
         const price=card?(card.querySelector('.price')?.textContent?.trim()||''):'';
-        const msg=`مرحبا، اريد شراء: ${name}\nالسعر: ${price}`;
+        const msg=`مرحبا، اريد شراء: ${name}\\nSKU: ${sku}\\nالسعر: ${price}`;
         const tg='https://t.me/procode00?text='+encodeURIComponent(msg);
         window.open(tg,'_blank');
       })
