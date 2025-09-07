@@ -71,16 +71,272 @@
   </style>
 </head>
 <body>
-  <!-- الهيدر + الأقسام (نبذة، مهارات، دورات، برامج، مذكرات، بحوث، مشاريع، خطط مستقبلية، أسعار، تواصل) -->
-  <!-- زر نصائح للطلاب يظهر modal -->
-  <!-- الفوتر -->
+  <nav>
+    <div class="container wrap">
+      <a href="#home" class="brand">
+        <span class="logo">RA</span>
+        <span>أكاديمية رؤى عزيز الموسوي — Ruaaa Aziz Academy</span>
+      </a>
+      <div class="navlinks">
+        <a href="#about">نبذة</a>
+        <a href="#skills">مهاراتي</a>
+        <a href="#courses">دوراتي</a>
+        <a href="#programs">البرامج</a>
+        <a href="#planners">المذكرات</a>
+        <a href="#research">البحوث والتقارير</a>
+        <a href="#projects">مشاريعي</a>
+        <a href="#future">خططي</a>
+        <a href="#pricing">الأسعار</a>
+        <a href="#contact">تواصل</a>
+        <button id="modeBtn" class="btn small" title="تبديل الوضع" aria-label="تبديل الوضع">مضيء/مظلم</button>
+        <button id="tipsBtn" class="btn small ghost" title="نصائح للطلاب">نصائح للطلاب</button>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="container hero">
+    <div class="card">
+      <div class="avatar">
+        <img src="profile.jpg" alt="صورة رؤى عزيز الموسوي" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x800.png?text=Ruaa+Aziz';" />
+      </div>
+      <div style="margin-top:1rem" class="row">
+        <a class="btn" href="#programs">تسوق المنتجات</a>
+        <a class="btn ghost" href="#pricing">زر الدفع / الأسعار</a>
+      </div>
+    </div>
+    <div>
+      <h1>مرحبًا بكم في <span style="background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent">البوابة الرقمية</span><br><small style="font-size:.85em;color:var(--muted)">A Digital Gateway by Ruaaa Aziz</small></h1>
+      <p class="muted">منصة تجمع دوراتي، برامجي، المذكرات، والبحوث والتقارير في مكان واحد. هدفي تمكين الطلاب والمهنيين بأدوات عربية عملية تزيد الإنتاجية.</p>
+      <div class="badges" style="margin:.9rem 0 1.2rem">
+        <span class="badge">#Python</span>
+        <span class="badge">#Excel/VBA</span>
+        <span class="badge">#Automation</span>
+        <span class="badge">#UI/UX</span>
+        <span class="badge">#تقارير أكاديمية</span>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="label">عملاء سعداء</div><div class="num">+350</div></div>
+        <div class="kpi"><div class="label">مشروع منجز</div><div class="num">+120</div></div>
+        <div class="kpi"><div class="label">منتجات مدفوعة</div><div class="num">18</div></div>
+        <div class="kpi"><div class="label">سنوات خبرة</div><div class="num">8</div></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="container">
+    <div class="sec-title"><h2>نبذة عني</h2><span class="tag">مختصر</span></div>
+    <div class="grid cols-2">
+      <div class="card">
+        <p>أنا <strong>رؤى عزيز الموسوي</strong>، مهندسة ومطوّرة برمجيات وصاحبة <em>البوابة الرقمية</em>. أقدّم حلولاً عربية عملية: برامج مخصّصة، قوالب تقارير، ومذكرات إنتاجية. خبرتي تشمل Python، Excel/VBA، وتصميم واجهات RTL. أقدّم دورات عبر اليوتيوب والأكاديميات وأسعى لتمكين الأفراد والمؤسسات من تبسيط العمل بالأدوات الرقمية.</p>
+        <div class="row" style="margin-top:.8rem">
+          <span class="badge">هواياتي: قراءة • تصوير • تبسيط برمجي</span>
+          <span class="badge">شهاداتي: برمجة • ذكاء اصطناعي • إدارة مشاريع</span>
+        </div>
+      </div>
+      <div class="card">
+        <table>
+          <tr><th>المعلومة</th><th>تفاصيل</th></tr>
+          <tr><td>معرف إدارة الأعمال</td><td><a href="https://t.me/procode00" target="_blank">@procode00</a></td></tr>
+          <tr><td>يوتيوب</td><td><a href="https://www.youtube.com/@EngRuaaAL.musawi" target="_blank">EngRuaaAL.musawi</a></td></tr>
+          <tr><td>أكاديميات</td><td><a href="https://acadimy00.acadimiat.com/admin?academyId=8663" target="_blank">ملفي على أكاديميات</a></td></tr>
+          <tr><td>البريد</td><td><a href="mailto:ruaa@example.com">ruaa@example.com</a></td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="container">
+    <div class="sec-title"><h2>مهاراتي</h2><span class="tag">تقنية وعملية</span></div>
+    <div class="grid cols-3">
+      <div class="card">Python / أتمتة</div>
+      <div class="card">Excel/VBA / تقارير</div>
+      <div class="card">تصميم واجهات عربية</div>
+      <div class="card">بوتات تليجرام</div>
+      <div class="card">تحرير الصور</div>
+      <div class="card">كتابة تقارير أكاديمية</div>
+    </div>
+  </section>
+
+  <section id="courses" class="container">
+    <div class="sec-title"><h2>دوراتي</h2><span class="tag">أضِيفي المزيد بنسخ بطاقة</span></div>
+    <div class="grid cols-3">
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Excel+Automation" alt="Excel Automation"></div>
+        <strong>دورة أتمتة التقارير باستخدام Excel/VBA</strong>
+        <p class="muted">من الصفر حتى بناء تقارير عربية احترافية.</p>
+        <div class="row"><span class="price">69,000 IQD</span><a class="btn small" href="#pay" data-sku="course-excel">شراء</a></div>
+      </div>
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Python+Practical" alt="Python Practical"></div>
+        <strong>Python للأتمتة العملية</strong>
+        <p class="muted">سكربتات حقيقية: تنظيم ملفات، PDF، مراسلة.</p>
+        <div class="row"><span class="price">89,000 IQD</span><a class="btn small" href="#pay" data-sku="course-python">شراء</a></div>
+      </div>
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Arabic+UI+Design" alt="Arabic UI"></div>
+        <strong>تصميم واجهات عربية احترافية</strong>
+        <p class="muted">مبادئ التصميم، التدرجات، الأيقونات، RTL.</p>
+        <div class="row"><span class="price">59,000 IQD</span><a class="btn small" href="#pay" data-sku="course-ui">شراء</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs" class="container">
+    <div class="sec-title"><h2>البرامج</h2><span class="tag">منتجات مدفوعة</span></div>
+    <div class="grid cols-3">
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Expense+Manager" alt="منظم المصاريف"></div>
+        <strong>منظّم المصاريف — نسخة مكتبية</strong>
+        <p class="muted">إدارة ميزانية شهرية بواجهة عربية وتقارير.</p>
+        <div class="row"><span class="price">49,000 IQD</span><a class="btn small" href="#pay" data-sku="prog-expenses">شراء</a></div>
+      </div>
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Maintenance+Tracker" alt="متابعة الصيانة"></div>
+        <strong>متابعة معاملات الصيانة</strong>
+        <p class="muted">تتبّع الأعطال وقطع الغيار والأجور مع طباعة.</p>
+        <div class="row"><span class="price">119,000 IQD</span><a class="btn small" href="#pay" data-sku="prog-maint">شراء</a></div>
+      </div>
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Telegram+Bot" alt="بوت تقارير"></div>
+        <strong>بوت تقارير تليجرام</strong>
+        <p class="muted">يولّد تقارير PDF ثنائية اللغة مع تسعير ديناميكي.</p>
+        <div class="row"><span class="price">149,000 IQD</span><a class="btn small" href="#pay" data-sku="prog-bot">شراء</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planners" class="container">
+    <div class="sec-title"><h2>المذكرات</h2><span class="tag">قوالب جاهزة</span></div>
+    <div class="grid cols-3">
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Daily+Planner" alt="مفكرة يومية"></div>
+        <strong>مفكرة يومية PDF</strong>
+        <p class="muted">تنظيم المهام والأولويات والملاحظات.</p>
+        <div class="row"><span class="price">9,000 IQD</span><a class="btn small" href="#pay" data-sku="plan-daily">شراء</a></div>
+      </div>
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Study+Planner" alt="مفكرة دراسية"></div>
+        <strong>مفكرة دراسية</strong>
+        <p class="muted">جدولة مذاكرة وتتبع الدرجات وخطة الاختبارات.</p>
+        <div class="row"><span class="price">12,000 IQD</span><a class="btn small" href="#pay" data-sku="plan-study">شراء</a></div>
+      </div>
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Project+Planner" alt="مفكرة مشاريع"></div>
+        <strong>مفكرة مشاريع</strong>
+        <p class="muted">مراحل، مخاطر، ميزانية، ومخرجات.</p>
+        <div class="row"><span class="price">14,000 IQD</span><a class="btn small" href="#pay" data-sku="plan-project">شراء</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="container">
+    <div class="sec-title"><h2>البحوث والتقارير</h2><span class="tag">منتجات مدفوعة</span></div>
+    <div class="grid cols-3">
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Research+Template" alt="قالب بحث"></div>
+        <strong>قالب بحث أكاديمي</strong>
+        <p class="muted">تنسيق، هوامش، فهرس تلقائي، وإدراج مراجع.</p>
+        <div class="row"><span class="price">19,000 IQD</span><a class="btn small" href="#pay" data-sku="res-template">شراء</a></div>
+      </div>
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Report+Pack" alt="حزمة تقارير"></div>
+        <strong>حزمة قوالب تقارير</strong>
+        <p class="muted">إداري + فني + مالي بصيغ DOCX/PDF.</p>
+        <div class="row"><span class="price">39,000 IQD</span><a class="btn small" href="#pay" data-sku="res-pack">شراء</a></div>
+      </div>
+      <div class="card product">
+        <div class="thumb"><img src="https://via.placeholder.com/800x600?text=Thesis+Formatter" alt="مهيئ أطروحة"></div>
+        <strong>مهيئ الأطروحة</strong>
+        <p class="muted">قوالب جاهزة مع تعليمات الاستشهاد.</p>
+        <div class="row"><span class="price">59,000 IQD</span><a class="btn small" href="#pay" data-sku="res-thesis">شراء</a></div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:1rem">بعد الشراء ستحصلين على رابط تحميل مباشر، ويمكن تخصيص المنتجات حسب الطلب.</p>
+  </section>
+
+  <section id="projects" class="container">
+    <div class="sec-title"><h2>مشاريعي</h2><span class="tag">مختارات</span></div>
+    <div class="grid cols-3">
+      <a class="card" href="https://www.youtube.com/@EngRuaaAL.musawi" target="_blank">قناة يوتيوب</a>
+      <a class="card" href="https://t.me/procode00" target="_blank">الأكاديمية على التليجرام</a>
+      <a class="card" href="https://acadimy00.acadimiat.com/admin?academyId=8663" target="_blank">صفحتي على أكاديميات</a>
+    </div>
+  </section>
+
+  <section id="future" class="container">
+    <div class="sec-title"><h2>الخطط المستقبلية</h2><span class="tag">خارطة طريق</span></div>
+    <div class="timeline">
+      <div class="milestone"><strong>Q4 2025</strong><div class="label">إطلاق نسخة ويب لبرنامج المصاريف</div></div>
+      <div class="milestone"><strong>Q1 2026</strong><div class="label">تكامل دفع محلي (بوابات عراقية)</div></div>
+      <div class="milestone"><strong>Q2 2026</strong><div class="label">أكاديمية مصغّرة لدروس مختصرة (RTL)</div></div>
+      <div class="milestone"><strong>Q3 2026</strong><div class="label">لوحة عميل للشركات مع تتبع تراخيص</div></div>
+    </div>
+  </section>
+
+  <section id="pricing" class="container">
+    <div class="sec-title"><h2>الأسعار والدفع</h2><span class="tag">شهري/سنوي</span></div>
+    <div class="row" style="justify-content:space-between;align-items:center;margin-bottom:1rem">
+      <div class="row">
+        <a class="btn" href="#pay">الدفع الآن</a>
+        <a class="btn ghost" href="https://t.me/procode00" target="_blank">تواصل عبر التليجرام</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <div class="sec-title"><h2>تواصل معي</h2><span class="tag">رد خلال 24 ساعة</span></div>
+    <div class="grid cols-2">
+      <div class="card">
+        <p><strong>معرف إدارة الأعمال:</strong> <a href="https://t.me/procode00" target="_blank">@procode00</a></p>
+        <p class="muted">للطلبيات المؤسسية والعقود، راسليني على التليجرام أو البريد.</p>
+      </div>
+      <div class="card">
+        <form onsubmit="return fakeSubmit(event)">
+          <div class="row">
+            <input required name="name" placeholder="الاسم" style="flex:1;padding:.8rem;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text)"/>
+            <input required name="email" type="email" placeholder="البريد" style="flex:1;padding:.8rem;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text)"/>
+          </div>
+          <textarea required name="msg" placeholder="رسالتك" rows="4" style="margin-top:.6rem;width:100%;padding:.8rem;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text)"></textarea>
+          <div class="row"><button class="btn" type="submit">إرسال</button><span id="formNote" class="label"></span></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container foot">
+    <small class="muted">© <span id="year"></span> أكاديمية رؤى عزيز الموسوي — جميع الحقوق محفوظة</small>
+    <div class="social">
+      <a href="#home">للأعلى</a>
+      <a href="https://www.youtube.com/@EngRuaaAL.musawi" target="_blank">YouTube</a>
+      <a href="https://t.me/procode00" target="_blank">Telegram</a>
+      <a href="https://acadimy00.acadimiat.com/admin?academyId=8663" target="_blank">Acadimiat</a>
+    </div>
+  </footer>
+
+  <dialog id="tipsModal" aria-labelledby="tipsTitle">
+    <div class="modal-head">
+      <h3 id="tipsTitle">نصائح سريعة للطلاب</h3>
+      <button class="close" onclick="closeTips()">إغلاق</button>
+    </div>
+    <div class="modal-body">
+      <ol>
+        <li>قسّم/قسّمي الدراسة إلى وحدات صغيرة بنظام (25 دقيقة تركيز + 5 دقائق راحة).</li>
+        <li>استخدم/ي مفكرة الدراسة لتخطيط أسبوعك وحددي هدفًا قابلًا للقياس لكل جلسة.</li>
+        <li>للتقارير: اعمل/ي قالبًا ثابتًا للمقدمة والمنهجية وضَع/ي قائمة مراجع مُدارة.</li>
+        <li>ركّز/ي على الفهم أولًا ثم الحفظ، وجرّب/ي <strong>المذاكرة النشطة</strong>.</li>
+        <li>احتفظ/ي بسجل أخطاء/ملاحظات يُراجع قبل كل اختبار.</li>
+      </ol>
+      <div class="note" style="margin-top:.6rem">حزم مفكرة ودليل كتابة التقارير متاحة في أقسام <a href="#planners">المذكرات</a> و<a href="#research">البحوث والتقارير</a>.</div>
+    </div>
+  </dialog>
+
   <script>
-    const root=document.documentElement;
-    const savedTheme=localStorage.getItem('theme');
-    if(savedTheme==='light'){root.classList.add('light')}
-    const modeBtn=document.getElementById('modeBtn');
-    if(modeBtn){modeBtn.addEventListener('click',()=>{root.classList.toggle('light');localStorage.setItem('theme',root.classList.contains('light')?'light':'dark')});}
+    const root=document.documentElement;const savedTheme=localStorage.getItem('theme');if(savedTheme==='light'){root.classList.add('light')}
+    const modeBtn=document.getElementById('modeBtn');modeBtn.addEventListener('click',()=>{root.classList.toggle('light');localStorage.setItem('theme',root.classList.contains('light')?'light':'dark')});
+    const tipsBtn=document.getElementById('tipsBtn');const tipsModal=document.getElementById('tipsModal');tipsBtn.addEventListener('click',()=>tipsModal.showModal());function closeTips(){tipsModal.close()}window.closeTips=closeTips;
+    function fakeSubmit(e){e.preventDefault();document.getElementById('formNote').textContent='تم إرسال رسالتك (محاكاة). اربطي النموذج بخدمة بريد لاحقًا.';return false}window.fakeSubmit=fakeSubmit;
     document.getElementById('year').textContent=new Date().getFullYear();
+    // زر الشراء: يفتح رسالة تليجرام فيها اسم المنتج والسعر وSKU
     document.querySelectorAll('[href="#pay"]').forEach(btn=>{
       btn.addEventListener('click',(e)=>{
         e.preventDefault();
@@ -88,7 +344,7 @@
         const name=card?(card.querySelector('strong, h3')?.textContent?.trim()||'منتج'):(btn.dataset.plan||btn.dataset.sku||'منتج');
         const sku=btn.dataset.sku||btn.dataset.plan||'';
         const price=card?(card.querySelector('.price')?.textContent?.trim()||''):'';
-        const msg=`مرحبا، اريد شراء: ${name}\\nSKU: ${sku}\\nالسعر: ${price}`;
+        const msg=`مرحبا، اريد شراء: ${name}\nSKU: ${sku}\nالسعر: ${price}`;
         const tg='https://t.me/procode00?text='+encodeURIComponent(msg);
         window.open(tg,'_blank');
       })
